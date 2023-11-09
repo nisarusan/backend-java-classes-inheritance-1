@@ -13,8 +13,8 @@ public class Main {
 //        [x]10. Verwijder in `Main` de regels `customer.name = ...` en `customer2.name=...`, dit gebeurt nu namelijk al in de constructor.
 //        [x]11. Vervang in `Main` ook `System.out.println(customer.name);` en `System.out.println(customer2.name);` door de `printName()` methode van die klassen aan te roepen
 
-        Customer customer = new Customer("Nizar", "Abak", new Creditcard(100));
-        Customer customer2 = new Customer("Jan", "Verhagen", new Creditcard(500));
+        Customer customer = new Customer("Nizar", "Abak", new VisaCard(100));
+        Customer customer2 = new Customer("Jan", "Verhagen", new Mastercard(500));
         customer.printName();
 
         customer.getCreditcard().pay(15);

@@ -1,7 +1,7 @@
 public class Customer {
-    String name;
-    String lastName;
-    int customerNumber;
+    private String name;
+    private String lastName;
+    private int customerNumber;
     private Creditcard creditcard;
 
     public Customer(String name, String lastName, Creditcard creditcard) {
@@ -9,6 +9,7 @@ public class Customer {
         this.lastName = lastName;
         this.creditcard = creditcard;
     }
+
     public Customer(String name, String lastName, int customerNumber, Creditcard creditcard) {
         this.name = name;
         this.lastName = lastName;
